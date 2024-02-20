@@ -1,16 +1,20 @@
 'use client'
 
+import Container from './components/Container'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import Projects from './components/Projects'
+import Timeline from './components/Timeline'
 export default function page() {
 	return (
 		<>
-			<section className="w-full lg:max-w-screen-lg flex flex-col justify-center mx-auto text-white opacity-90">
-				<Header />
-				<Hero /	>
-				{/*<div>Projects</div>	
-				<div>Technologies</div>*/}
-			</section>
+			<Container id='main'>
+				<Header/>
+				<Hero/>
+				<Projects/>
+				{/*<div>Technologies</div>*/}
+				<Timeline/>
+			</Container>
 		</>
 	)
 }

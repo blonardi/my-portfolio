@@ -5,3 +5,17 @@
 :root {
 	color-scheme: light dark;
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
+body { 
+	background: black;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
