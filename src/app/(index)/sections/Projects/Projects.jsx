@@ -9,6 +9,9 @@ import mongodb from '@/app/assets/icons//mongodb.svg'
 import express from '@/app/assets/icons//express.svg'
 import github from '@/app/assets/icons//github.svg'
 import code from '@/app/assets/icons//code.svg'
+//images
+import argynews from '@/app/assets/images-projects/argynews-card.webp'
+import cultura from '@/app/assets/images-projects/cultura-card.webp'
 
 import Image from "next/image"
 
@@ -60,17 +63,17 @@ export default function ProjectList() {
 		{
 			title: 'Argy News',
 			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
-			link: '#',
-			github: '#',
-			img: 'https://source.unsplash.com/NVHPka9Rk',
+			link: 'https://argynews.vercel.app/',
+			github: 'https://github.com/blonardi/argynews-scraper',
+			img: argynews,
 			technologies: [TAGS.REACT, TAGS.EXPRESS, TAGS.BOOTSTRAP, TAGS.CHEERIO]
 		},
 		{
 			title: 'Culturas y Raices',
 			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
-			link: '#',
-			github: '#',
-			img: 'https://source.unsplash.com/NVHPka9Rk',
+			link: 'https://antoninosartori.github.io/culturas-raices-kumpel/',
+			github: 'https://github.com/antoninosartori/culturas-raices-kumpel',
+			img: cultura,
 			technologies: [TAGS.BOOTSTRAP, TAGS.JAVASCRIPT]
 		},
 		{
@@ -78,7 +81,7 @@ export default function ProjectList() {
 			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
 			link: '#',
 			github: '#',
-			img: 'https://source.unsplash.com/NVHPka9Rk',
+			img: argynews,
 			technologies: [TAGS.NEXT, TAGS.TAILWIND, TAGS.EXPRESS, TAGS.MONGODB]
 		},
 		{
@@ -86,7 +89,7 @@ export default function ProjectList() {
 			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
 			link: '#',
 			github: '#',
-			img: 'https://source.unsplash.com/NVHPka9Rk',
+			img: cultura,
 			technologies: [TAGS.NEXT, TAGS.TAILWIND, TAGS.EXPRESS, TAGS.MONGODB]
 		},
 	]
