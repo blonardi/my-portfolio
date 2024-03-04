@@ -10,7 +10,7 @@ export default function Projects() {
 				<div>
 					<h2 className="flex items-center mb-6 text-2xl gap-x-2 font-semiboldbold">
 						<Image src={Code} alt="Code project Logo" height={28} width={28} />
-						Projects
+						<span className="text-3xl">Projects</span>
 					</h2>
 				</div>
 				<ProjectList />
