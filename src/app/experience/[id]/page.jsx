@@ -11,7 +11,7 @@ export default function Experience({ params: { id } }) {
 			<div className=' imagen'>
 				{/* screen web and link it */}
 				<figure className='shadow-2xl shadow-slate-200'>
-					<Image className='rounded-full' src={experience.image} height={600} width={800} alt={`Image of web ${experience}`} />
+					<Image src={experience.image} height={600} width={800} alt={`Image of web ${experience}`} />
 				</figure>
 			</div>
 			<div className='flex items-center justify-start h-auto my-10 gap-x-4'>
