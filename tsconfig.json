@@ -33,7 +33,8 @@
 		".next/types/**/*.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		"src/app/(index)/**/*.jsx"
+		"src/app/(index)/**/*.jsx",
+		"src/app/assets/experiences.js"
 	],
 	"exclude": [
 		"node_modules"
