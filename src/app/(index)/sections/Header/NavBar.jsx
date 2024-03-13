@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import NavTag from './Components/NavTag'
 import Image from 'next/image'
-import profilePic from '@/app/assets/blonardi-profile.jpeg'
+import profilePic from '@/app/assets/blonardi-profile.png'
 import { useState } from 'react'
 
 export default function NavBar() {
@@ -10,6 +10,35 @@ export default function NavBar() {
 	const displayNavbar = () => {
 		setNavBar(!navBar)
 	}
+
+	const LINKS = [
+		{
+			name: 'home',
+			href: '',
+			fn: setNavBar
+		},
+		{
+			name: 'about',
+			href: '/#about',
+			fn: setNavBar
+		},
+		{
+			name: 'projects',
+			href: '/#projects',
+			fn: setNavBar
+		},
+		{
+			name: 'resume',
+			href: 'https://drive.google.com/file/d/1zyAFLw0rVwZGUxpwEr3LNxlBcQ3viHpG/view?usp=drive_link',
+			fn: setNavBar
+		},
+		{
+			name: 'contact',
+			href: '/#contact',
+			fn: setNavBar
+		},
+	]
+
 	return (
 		<>
 			<section className='w-full md:auto'>
@@ -40,19 +69,11 @@ export default function NavBar() {
 						}`}>
 						<div className='flex flex-col items-center justify-between mx-auto gap-y-2 lg:flex-row lg:gap-x-10'>
 							<ul className="justify-center h-screen md:mx-auto w-[80%] md:h-auto md:flex">
-								<li className="py-4 text-xl text-center text-white border-b-2 border-purple-900 md:px-6 md:border-b-0 hover:bg-purple-900 md:hover:text-purple-600 md:hover:bg-transparent">
-									<NavTag href="/" onClick={setNavBar}>home</NavTag>
-								</li>
-								<li className="py-4 text-xl text-center text-white border-b-2 border-purple-900 md:px-6 md:border-b-0 hover:bg-purple-900 md:hover:text-purple-600 md:hover:bg-transparent">
-									<NavTag href="/#about-me" onClick={setNavBar}>about</NavTag></li>
-								<li className="py-4 text-xl text-center text-white border-b-2 border-purple-900 md:px-6 md:border-b-0 hover:bg-purple-900 md:hover:text-purple-600 md:hover:bg-transparent">
-									<NavTag href='/#projects' onClick={setNavBar}>projects</NavTag>
-								</li>
-								<li className="py-4 text-xl text-center text-white border-b-2 border-purple-900 md:px-6 md:border-b-0 hover:bg-purple-900 md:hover:text-purple-600 md:hover:bg-transparent">
-									<NavTag href='https://drive.google.com/file/d/1zyAFLw0rVwZGUxpwEr3LNxlBcQ3viHpG/view?usp=drive_link' onClick={setNavBar}>resume</NavTag></li>
-								<li className="py-4 text-xl text-center text-white border-b-2 border-purple-900 md:px-6 md:border-b-0 hover:bg-purple-900 md:hover:text-purple-600 md:hover:bg-transparent">
-									<NavTag href='/#contact' onClick={setNavBar}>contact</NavTag>
-								</li>
+								{LINKS.map(link => (
+									<li key={link.name} className="py-4 text-xl text-center text-white border-b-2 border-purple-900 md:px-6 md:border-b-0 hover:bg-purple-900 md:hover:text-purple-600 md:hover:bg-transparent">
+										<NavTag href={link.href} onClick={link.fn}>{link.name}</NavTag>
+									</li>
+								))}
 							</ul>
 						</div>
 					</div>
