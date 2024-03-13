@@ -18,10 +18,10 @@ export default function Experience({ params: { id } }) {
 				<h2 className='text-4xl'>{experience.enterprise} -</h2>
 				<p className='text-xl text-zinc-100'>{experience.date}</p>
 			</div>
-			<div className='flex-grow flex-shrink-0'>
-				<h4 className='mb-2 text-2xl'>{experience.title}</h4>
-				<h2 className='text-lg'>{experience.subtitle}</h2>
-				<p className='text-md'>{experience.description}</p>
+			<div className='flex flex-col flex-grow flex-shrink-0 gap-y-2'>
+				<h4 className='mb-2 text-3xl'><span className='text-zinc-400'>Position - </span>{experience.title}</h4>
+				<h2 className='text-xl'>{experience.subtitle}</h2>
+				<p className='text-lg'>{experience.description}</p>
 			</div>
 		</div>
 	)
