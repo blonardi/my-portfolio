@@ -49,7 +49,7 @@ export default function NavBar() {
 									<NavTag href='/#projects' onClick={setNavBar}>projects</NavTag>
 								</li>
 								<li className="py-4 text-xl text-center text-white border-b-2 border-purple-900 md:px-6 md:border-b-0 hover:bg-purple-900 md:hover:text-purple-600 md:hover:bg-transparent">
-									<NavTag href='/#resume' onClick={setNavBar}>resume</NavTag></li>
+									<NavTag href='https://drive.google.com/file/d/1zyAFLw0rVwZGUxpwEr3LNxlBcQ3viHpG/view?usp=drive_link' onClick={setNavBar}>resume</NavTag></li>
 								<li className="py-4 text-xl text-center text-white border-b-2 border-purple-900 md:px-6 md:border-b-0 hover:bg-purple-900 md:hover:text-purple-600 md:hover:bg-transparent">
 									<NavTag href='/#contact' onClick={setNavBar}>contact</NavTag>
 								</li>

@@ -10,15 +10,15 @@
 import Link from "next/link";
 
 export default function NavTag({ children, href, onClick }) {
-  const handleClick = () => {
-    if (onClick) {
-      onClick();
-    }
-  };
+	const handleClick = () => {
+		if (onClick) {
+			onClick();
+		}
+	};
 
-  return (
-    <Link href={href} className='text-xl transition hover:ease-in hover:scale-125 hover:cursor-pointer' onClick={handleClick}>
-        {children}
-    </Link>
-  );
+	return (
+		<Link href={href} target="_blank" className='text-xl transition hover:ease-in hover:scale-125 hover:cursor-pointer' onClick={handleClick}>
+			{children}
+		</Link>
+	);
 }
