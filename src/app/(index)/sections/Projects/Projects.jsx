@@ -110,7 +110,7 @@ export default function ProjectList() {
 							/>
 						</a>
 						<div className="flex flex-col justify-between gap-2 p-4 text-wrap">
-							<h3 className="text-2xl font-semibold text-orange-300">{title}</h3>
+							<h3 className="text-2xl font-semibold text-orange-600">{title}</h3>
 							<div className='h-full min-h-24 grow'>
 								<ul className="flex flex-wrap items-center p-2 mb-2 text-center rounded-sm gap-y-2 gap-x-6 ">
 									{technologies.map(tech => (
