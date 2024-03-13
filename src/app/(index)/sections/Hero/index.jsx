@@ -36,13 +36,6 @@ export default function Hero() {
 					</SocialPill>
 				</nav>
 			</SectionContainer>
-			{/*<section>
-				<span className="bg-blue-100 hover:bg-blue-200 text-blue-800 text-sm font-medium me-2 px-2.5 py-1 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 inline-flex items-center justify-center">React</span>
-				<span className="bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-medium me-2 px-2.5 py-1 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400 inline-flex items-center justify-center">Next</span>
-				<span className="bg-green-100 hover:bg-green-200 text-green-800 text-sm font-medium me-2 px-2.5 py-1 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400 inline-flex items-center justify-center">MongoDB</span>
-				<span className="bg-yellow-100 hover:bg-yellow-200 text-yellow-800 text-sm font-medium me-2 px-2.5 py-1 rounded dark:bg-gray-700 dark:text-yellow-400 border border-yellow-400 inline-flex items-center justify-center">Python</span>
-				<span className="bg-sky-100 hover:bg-sky-200 text-sky-800 text-sm font-medium me-2 px-2.5 py-1 rounded dark:bg-gray-700 dark:text-sky-400 border border-sky-400 inline-flex items-center justify-center">SQL</span>
-			</section>*/}
 		</main>
 	)
 }
