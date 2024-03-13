@@ -62,6 +62,7 @@ export default function ProjectList() {
 	const PROJECTS = [
 		{
 			title: 'Argy News',
+			type: 'Project',
 			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
 			link: 'https://argynews.vercel.app/',
 			github: 'https://github.com/blonardi/argynews-scraper',
@@ -70,6 +71,7 @@ export default function ProjectList() {
 		},
 		{
 			title: 'Culturas y Raices',
+			type: 'Work',
 			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
 			link: 'https://antoninosartori.github.io/culturas-raices-kumpel/',
 			github: 'https://github.com/antoninosartori/culturas-raices-kumpel',
@@ -77,7 +79,8 @@ export default function ProjectList() {
 			technologies: [TAGS.BOOTSTRAP, TAGS.JAVASCRIPT]
 		},
 		{
-			title: 'Kumpel Inmobiliaria',
+			title: 'Kump Inmobiliaria',
+			type: 'Project',
 			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
 			link: '#',
 			github: '#',
@@ -85,7 +88,8 @@ export default function ProjectList() {
 			technologies: [TAGS.NEXT, TAGS.TAILWIND, TAGS.EXPRESS, TAGS.MONGODB]
 		},
 		{
-			title: 'Proyecto 1',
+			title: 'Carlos Icardi',
+			type: 'Work',
 			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
 			link: '#',
 			github: '#',
@@ -96,7 +100,7 @@ export default function ProjectList() {
 	return (
 		<>
 			<section className="grid items-start justify-center grid-cols-1 gap-8 rounded-lg md:grid-cols-2">
-				{PROJECTS.map(({ index, title, description, link, github, img, technologies }) => (
+				{PROJECTS.map(({ index, title, type, description, link, github, img, technologies }) => (
 					<article key={index} className="h-full overflow-hidden transition-all duration-500 transform shadow-md hover:scale-105 hover:shadow-lg shadow-slate-100/10">
 						<a className='relative block h-[200px]' href={link}>
 							<Image
@@ -110,7 +114,10 @@ export default function ProjectList() {
 							/>
 						</a>
 						<div className="flex flex-col justify-between gap-2 p-4 text-wrap">
-							<h3 className="text-2xl font-semibold text-orange-600">{title}</h3>
+							<section className='flex items-center justify-between gap-x-2'>
+								<h3 className="text-2xl font-semibold text-orange-600">{title}</h3>
+								<span className={`rounded-full shadow-md shadow-slate-500 px-2 py-1 max-w-min font-semibold`}>{type}</span>
+							</section>
 							<div className='h-full min-h-24 grow'>
 								<ul className="flex flex-wrap items-center p-2 mb-2 text-center rounded-sm gap-y-2 gap-x-6 ">
 									{technologies.map(tech => (
