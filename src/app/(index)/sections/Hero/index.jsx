@@ -1,7 +1,7 @@
 'use client'
 import './hero.css'; // Asegúrate de importar el archivo de estilo
 import Image from 'next/image'
-import profilePic from '@/app/assets/blonardi-profile.jpeg'
+import profilePic from '@/app/assets/blonardi-profile.png'
 import SocialPill from './SocialPill'
 import SectionContainer from '../SectionContainer'
 import LinkedinIcon from '@/app/assets/icons/linkedin.svg'
