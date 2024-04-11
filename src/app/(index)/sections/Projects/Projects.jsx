@@ -63,7 +63,7 @@ export default function ProjectList() {
 		{
 			title: 'Argy News',
 			type: 'Project',
-			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
+			description: 'News website scraped with Node.js',
 			link: 'https://argynews.vercel.app/',
 			github: 'https://github.com/blonardi/argynews-scraper',
 			img: argynews,
@@ -72,7 +72,7 @@ export default function ProjectList() {
 		{
 			title: 'Culturas y Raices',
 			type: 'Work',
-			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
+			description: 'Contact site and sale of touristic packages',
 			link: 'https://antoninosartori.github.io/culturas-raices-kumpel/',
 			github: 'https://github.com/antoninosartori/culturas-raices-kumpel',
 			img: cultura,
@@ -81,18 +81,20 @@ export default function ProjectList() {
 		{
 			title: 'Kump Inmobiliaria',
 			type: 'Project',
-			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
-			link: '#',
-			github: '#',
+			description: 'Web site of real estate in Entre Rios',
+			excerpt: "Kumpel Inmobiliaria es un proyecto personal enfocado en mostrar propiedades en la provincia de Entre Ríos. La plataforma permite a los usuarios explorar una variedad de inmuebles, desde residenciales hasta comerciales, con detalles claros y fotos de calidad. Ofrecemos una navegación fácil y amigable para ayudar a los interesados a encontrar la propiedad que se ajuste a sus necesidades.",
+			link: 'https://inmobiliarias-next.vercel.app/',
+			github: 'https://github.com/blonardi/inmobiliarias-next',
 			img: argynews,
 			technologies: [TAGS.NEXT, TAGS.TAILWIND, TAGS.EXPRESS, TAGS.MONGODB]
 		},
 		{
 			title: 'Carlos Icardi',
 			type: 'Work',
-			description: 'lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor',
-			link: '#',
-			github: '#',
+			description: 'Portfolio de Carlos Icardi: Consultoría en Gestión Empresarial',
+			excerpt: "We carried out the development of a web portfolio for Carlos Icardi, an expert in business management consulting. We worked closely with tickets de Jira, using agile methodology for task management and ensuring efficient execution. We used Astro.js technology to optimize the loading speed and user experience of the site. We created specific branches for each task, allowing a precise and organized implementation of the functionalities. The result is a modern and attractive platform that highlights Carlos Icardi's professional experience and innovative approach in his field.",
+			link: 'https://carlosicardi.com.ar/',
+			github: 'https://github.com/antoninosartori/carlos-icardi',
 			img: cultura,
 			technologies: [TAGS.NEXT, TAGS.TAILWIND, TAGS.EXPRESS, TAGS.MONGODB]
 		},
