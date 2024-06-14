@@ -96,8 +96,8 @@ export default function ProjectList() {
 		{
 			title: 'ER Turismo',
 			type: 'Project',
-			description: 'Web site of real estate in Entre Rios',
-			excerpt: "Kumpel Inmobiliaria es un proyecto personal enfocado en mostrar propiedades en la provincia de Entre Ríos. La plataforma permite a los usuarios explorar una variedad de inmuebles, desde residenciales hasta comerciales, con detalles claros y fotos de calidad. Ofrecemos una navegación fácil y amigable para ayudar a los interesados a encontrar la propiedad que se ajuste a sus necesidades.",
+			description: 'Articles and lodging in Entre Ríos',
+			excerpt: "Explore unique articles and lodging in Entre Ríos with ER Turismo. Find your next adventure.",
 			link: 'https://erturismo-blog.vercel.app/',
 			github: 'https://github.com/blonardi/blog-sanity',
 			img: erturismo,
