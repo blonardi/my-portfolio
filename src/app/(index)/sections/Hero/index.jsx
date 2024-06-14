@@ -28,7 +28,7 @@ export default function Hero() {
 					</SocialPill>
 					<SocialPill href="https://github.com/blonardi">
 						<Image src={GithubIcon} alt="Linkedin Logo" height={24} width={24} />
-						Linkedin
+						Github
 					</SocialPill>
 					<SocialPill href="mailto:lonardibautista@gmail.com">
 						<Image src={MailIcon} alt="Linkedin Logo" height={26} width={26} />

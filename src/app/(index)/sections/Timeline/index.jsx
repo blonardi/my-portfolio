@@ -9,7 +9,7 @@ export default function Timeline() {
 
 	return (
 		<>
-			<SectionContainer id='about-me'>
+			<SectionContainer id='about'>
 				<h2 className="flex items-center mb-6 text-2xl font-semibold gap-x-2">
 					<Image src={Laptop} alt="Experience Logo" height={28} width={28} />
 					Experience

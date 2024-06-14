@@ -6,11 +6,16 @@ import tailwind from '@/app/assets/icons/tailwind.svg'
 import javascript from '@/app/assets/icons/javascript.svg'
 import mongodb from '@/app/assets/icons/mongodb.svg'
 import express from '@/app/assets/icons/express.svg'
+import typescript from '@/app/assets/icons/typescript.svg'
+import sanity from '@/app/assets/icons/sanity.svg'
+
 import githubIcon from '@/app/assets/icons/github.svg'
 import codeIcon from '@/app/assets/icons/code.svg'
 //images
 import argynews from '@/app/assets/images-projects/argynews-card.webp'
 import cultura from '@/app/assets/images-projects/cultura-card.webp'
+import erturismo from '@/app/assets/images-projects/erTurismo.webp'
+
 
 import Image from "next/image"
 import SocialPill from '../Hero/SocialPill'
@@ -32,6 +37,16 @@ export default function ProjectList() {
 			name: 'Javascript',
 			class: 'bg-[#475569] text-white',
 			icon: javascript
+		},
+		TYPESCRIPT: {
+			name: 'Typescript',
+			class: 'bg-[#475569] text-white',
+			icon: typescript
+		},
+		SANITY: {
+			name: 'Sanity',
+			class: 'bg-[#475569] text-white',
+			icon: sanity
 		},
 		BOOTSTRAP: {
 			name: 'Bootstrap',
@@ -79,14 +94,14 @@ export default function ProjectList() {
 			technologies: [TAGS.BOOTSTRAP, TAGS.JAVASCRIPT]
 		},
 		{
-			title: 'Kump Inmobiliaria',
+			title: 'ER Turismo',
 			type: 'Project',
 			description: 'Web site of real estate in Entre Rios',
 			excerpt: "Kumpel Inmobiliaria es un proyecto personal enfocado en mostrar propiedades en la provincia de Entre Ríos. La plataforma permite a los usuarios explorar una variedad de inmuebles, desde residenciales hasta comerciales, con detalles claros y fotos de calidad. Ofrecemos una navegación fácil y amigable para ayudar a los interesados a encontrar la propiedad que se ajuste a sus necesidades.",
-			link: 'https://inmobiliarias-next.vercel.app/',
-			github: 'https://github.com/blonardi/inmobiliarias-next',
-			img: argynews,
-			technologies: [TAGS.NEXT, TAGS.TAILWIND, TAGS.EXPRESS, TAGS.MONGODB]
+			link: 'https://erturismo-blog.vercel.app/',
+			github: 'https://github.com/blonardi/blog-sanity',
+			img: erturismo,
+			technologies: [TAGS.NEXT, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.SANITY]
 		},
 		{
 			title: 'Carlos Icardi',

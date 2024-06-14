@@ -17,7 +17,7 @@ export default function NavTag({ children, href, onClick }) {
 	};
 
 	return (
-		<Link href={href} target="_blank" className='text-xl transition hover:ease-in hover:scale-125 hover:cursor-pointer' onClick={handleClick}>
+		<Link href={href} className='text-xl transition hover:ease-in hover:scale-125 hover:cursor-pointer' onClick={handleClick}>
 			{children}
 		</Link>
 	);

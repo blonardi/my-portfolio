@@ -13,30 +13,30 @@ export default function NavBar() {
 
 	const LINKS = [
 		{
-			name: 'home',
-			href: '',
+			name: 'Home',
+			href: '#',
 			fn: setNavBar
 		},
 		{
-			name: 'about',
-			href: '/#about',
+			name: 'Projects',
+			href: '#projects',
 			fn: setNavBar
 		},
 		{
-			name: 'projects',
-			href: '/#projects',
+			name: 'About',
+			href: '#about',
 			fn: setNavBar
 		},
 		{
-			name: 'resume',
+			name: 'Resume',
 			href: 'https://drive.google.com/file/d/1zyAFLw0rVwZGUxpwEr3LNxlBcQ3viHpG/view?usp=drive_link',
 			fn: setNavBar
 		},
-		{
-			name: 'contact',
-			href: '/#contact',
-			fn: setNavBar
-		},
+		//{
+		//	name: 'Contact',
+		//	href: '/#contact',
+		//	fn: setNavBar
+		//},
 	]
 
 	return (
